@@ -1,12 +1,13 @@
 import React from "react";
-import { Segment } from "semantic-ui-react";
-import { Header } from "semantic-ui-react";
+import { Header, Image, Segment } from "semantic-ui-react";
 
-const PokedexHeader = ({ name }) => {
+const PokedexHeader = ({ author, name }) => {
   return (
     <Segment basic inverted padded="very" vertical>
       <Header as="h1">This is a Header for {name} Pokedex!</Header>
-      <Header as="h3">This is a subheading.</Header>
+      <Header as="h3">Author: {author}</Header>
+
+      <Image src="male-coffee-shop.jpeg" size="small" centered />
     </Segment>
   );
 };
